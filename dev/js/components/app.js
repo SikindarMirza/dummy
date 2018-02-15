@@ -18,9 +18,11 @@ export default class App extends Component {
    
     return _.map(this.props.placeholders,placeholder =>{
       const k='onInputChange';
+      // console.log("d")
+      // console.log(this.props.values);
       return(
       <input style={inputStyle} key={placeholder.index} placeholder={placeholder.key} 
-      value={this.state.values[placeholder.index]}
+      value={this.props.values[placeholder.index].key}
       onChange={event=>{
           switch(placeholder.index)
           {

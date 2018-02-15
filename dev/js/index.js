@@ -4,26 +4,24 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import {BrowserRouter , Route ,Switch} from 'react-router-dom';
 import App from './components/app';
-import Stepa from './components/step1';
-import Stepb from './components/step2';
-import Stepc from './components/step3';
-import GlobalApp from './components/globalApp';
-
-
-
+import StepA from './components/stepA';
+import StepB from './components/stepB';
+import StepC from './components/stepC';
+import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
-  // <App placeholders={[{index:0,key:"Hello"},{key:"World",index:1},{key:"buddy",index:2}]}/>
+  <Provider store={createStoreWithMiddleware(reducers)}>
   <BrowserRouter>
     <div>    
       <Switch>   
-        <Route path="/stepb" component={Stepb} />
-        <Route path="/stepc" component={Stepc} />
-        <Route path="/"  component={Stepa} /> 
+        <Route path="/stepb" component={StepB} />
+        <Route path="/stepc" component={StepC} />
+        <Route path="/"  component={StepA} /> 
       </Switch>
     </div> 
 
  </BrowserRouter>
+ </Provider>
   , document.querySelector('.container'));
