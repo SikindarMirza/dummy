@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import App from './app';
 
-export default class Dummy extends Component{
+export default class Stepb extends Component{
     render(){
         return(
           <div>
