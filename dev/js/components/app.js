@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import {Link} from 'react-router-dom';
+require('../../scss/style.scss');
 export default class App extends Component {
   constructor(props){
     super(props);
@@ -40,7 +41,7 @@ export default class App extends Component {
       console.log(type);
        
       return(
-      <input type={type} style={inputStyle} key={placeholder.index} placeholder={placeholder.key} 
+      <input className="input" key={placeholder.index} placeholder={placeholder.key} 
       value={this.props.values[placeholder.index].key}
       onChange={event=>{
           switch(placeholder.index)
@@ -87,7 +88,7 @@ export default class App extends Component {
   
   //  console.log(this.props)
   return(
-    <div style={divStyle}>
+    <div>
       {this.renderInputs()}
     </div>
     
