@@ -19,9 +19,9 @@ ReactDOM.render(
   <BrowserRouter>
     <div>    
       <Switch>   
-        <Route path="/"  component={Stepa} /> 
         <Route path="/stepb" component={Stepb} />
         <Route path="/stepc" component={Stepc} />
+        <Route path="/"  component={Stepa} /> 
       </Switch>
     </div> 
 

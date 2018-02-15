@@ -7,9 +7,12 @@ export default class Stepb extends Component{
         return(
           <div>
             <App placeholders={[{index:0,key:"social"},{key:"social",index:1},{key:"social",index:2}]}/>
-            <Link to="/" className='btn btn primary'>
+            <Link to="/stepc" className='btn btn primary'>
               Next
-            </Link>    
+            </Link> 
+            <Link to="/" className='btn btn primary'>
+              Back
+            </Link>     
           </div>
         ) 
 
