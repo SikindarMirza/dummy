@@ -1,0 +1,17 @@
+import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
+import App from './app';
+
+export default class Dummy extends Component{
+    render(){
+        return(
+          <div>
+            <App placeholders={[{index:0,key:"social"},{key:"social",index:1},{key:"social",index:2}]}/>
+            <Link to="/" className='btn btn primary'>
+              Next
+            </Link>    
+          </div>
+        ) 
+
+    }
+}
