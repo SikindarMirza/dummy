@@ -8,7 +8,9 @@ export  class StepC extends Component{
     render(){
         return(
           <div className="form">
-            <App placeholders={[{index:0,key:"details"},{key:"details",index:1},{key:"details",index:2}]}
+            <h5>PERSONAL DETAILS</h5>
+            <h6>We will never sell it</h6>
+            <App placeholders={[{index:0,key:"First Name"},{key:"Last Name",index:1},{key:"Phone",index:2}]}
                  values={this.props.stepCData}
                  setStateForThisComp={this.props.setAppLevelStateForC}
                  shouldUsePassword={false}

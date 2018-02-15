@@ -8,7 +8,9 @@ export  class StepB extends Component{
     render(){
         return(
           <div className="form">
-            <App placeholders={[{index:0,key:"social"},{key:"social",index:1},{key:"social",index:2}]}
+            <h5>SOCIL PROFILES</h5>
+            <h6>Your preference on the social network</h6>
+            <App placeholders={[{index:0,key:"Twitter"},{key:"Facebook",index:1},{key:"Google Plus",index:2}]}
                   values={this.props.stepBData}
                   setStateForThisComp={this.props.setAppLevelStateForB}
                   shouldUsePassword={false}

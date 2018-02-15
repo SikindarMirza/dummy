@@ -1,3 +1,8 @@
+h5, h6 {
+  text-align: center;
+  color:#666;
+}
+
 .input {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -6,7 +11,7 @@
   width: 400px;
   margin: 0 auto 8px;
   display: block;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .form {

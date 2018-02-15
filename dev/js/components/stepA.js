@@ -13,12 +13,12 @@ export  class StepA extends Component{
     render(){
         return(
           <div className="form">
-            <App placeholders={[{index:0,key:"account"},{key:"account",index:1},{key:"account",index:2}]}
+            <h5>CREATE YOUR ACCOUNT</h5>
+            <App placeholders={[{index:0,key:"Email"},{key:"Password",index:1},{key:"Confirm Password",index:2}]}
                 values={this.props.stepAData}
                 setStateForThisComp={this.props.setAppLevelStateForA}
                 shouldUsePassword={true}
-               
-                 />
+            />
             <Link to="/stepb">
               <button className="button">Next</button>
             </Link>    
