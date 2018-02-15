@@ -27,5 +27,4 @@ function mapStateToProps(state){
        stepCData:state.stepCData
   }
 }
-export default connect(mapStateToProps)(StepC);
 export default connect(mapStateToProps,{setAppLevelStateForC})(StepC);
