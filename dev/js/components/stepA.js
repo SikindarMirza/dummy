@@ -11,12 +11,12 @@ export  class StepA extends Component{
      }
     render(){
         return(
-          <div>
+          <div className="form">
             <App placeholders={[{index:0,key:"account"},{key:"account",index:1},{key:"account",index:2}]}
                 values={this.props.stepAData}
                  />
-            <Link to="/stepb" className='btn btn-primary'>
-              Next
+            <Link to="/stepb">
+              <button className="button">Next</button>
             </Link>    
           </div>
         ) 

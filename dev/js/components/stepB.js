@@ -6,16 +6,16 @@ import App from './app';
 export  class StepB extends Component{
     render(){
         return(
-          <div>
+          <div className="form">
             <App placeholders={[{index:0,key:"social"},{key:"social",index:1},{key:"social",index:2}]}
                   values={this.props.stepBData}
                   />
-            <Link to="/stepc" className='btn btn-primary'>
-              Next
-            </Link> 
-            <Link to="/" className='btn btn-danger'>
-              Back
+            <Link to="/">
+              <button className="button">Previous</button>
             </Link>     
+            <Link to="/stepc">
+              <button className="button">Next</button>
+            </Link> 
           </div>
         ) 
 
