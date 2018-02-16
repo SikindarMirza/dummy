@@ -8,9 +8,9 @@ export  class StepA extends Component{
      constructor(props)
      {
        super(props);
-      // console.log(props)
      }
     render(){
+
         return(
           <div className="form">
             <h5>CREATE YOUR ACCOUNT</h5>
@@ -18,8 +18,9 @@ export  class StepA extends Component{
                 values={this.props.stepAData}
                 setStateForThisComp={this.props.setAppLevelStateForA}
                 shouldUsePassword={true}
+                required
             />
-            <Link to="/stepb">
+              <Link to="/stepb">
               <button className="button">Next</button>
             </Link>    
           </div>

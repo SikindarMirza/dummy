@@ -3,10 +3,7 @@ export default function(state= [
                                 {key:"",index:1},
                                 {key:"",index:2}
                                ],
-                        action){
-
-console.log("executin A reducer")
-console.log(state)
+                        action) {
     if(action.type == 'STEPA_ACTION') {
         console.log(action)
       return action.payload;
