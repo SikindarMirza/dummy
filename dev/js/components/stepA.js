@@ -18,7 +18,6 @@ export  class StepA extends Component{
                 values={this.props.stepAData}
                 setStateForThisComp={this.props.setAppLevelStateForA}
                 shouldUsePassword={true}
-                required
             />
               <Link to="/stepb">
               <button className="button">Next</button>
