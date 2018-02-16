@@ -5,8 +5,24 @@ import {setAppLevelStateForC} from '../actions/index';
 import App from './app';
 
 export  class StepC extends Component{
+  constructor(props){
+    super(props);
+    this.navToC=this.navToC.bind(this);
+  }
+  navToC()
+  {
+    console.log("SUBMITTED")
+    this.props.history.push('/')
+;  }
     render(){
         return(
+          <div className="progressDiv">
+          <ul id="progressbar">
+                 <li className="active">Account Setup</li>
+                 <li className="active" >Social Profiles</li>
+                 <li className="active">Personal Details</li>
+               </ul>  
+          <form data-toggle="validator" role="form"  onSubmit={this.navToC}>
           <div className="form">
             <h5>PERSONAL DETAILS</h5>
             <h6>We will never sell it</h6>
@@ -18,7 +34,9 @@ export  class StepC extends Component{
             <Link to="/stepb">
               <button className="button">Previous</button>
             </Link>
-            <button className="button">Submit</button>    
+            <button type="submit" className="button">Submit</button>    
+          </div>
+          </form>
           </div>
         ) 
 

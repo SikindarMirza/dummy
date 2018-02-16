@@ -21,7 +21,8 @@ export default class App extends Component {
         type="text";
        
       return(
-      <input className="input" key={placeholder.index} placeholder={placeholder.key} 
+       <div className='form-group' key={placeholder.index} > 
+      <input  className='form-control' required key={placeholder.index} placeholder={placeholder.key} 
       value={this.props.values[placeholder.index].key} 
       type={type}
       onChange={event=>{
@@ -38,6 +39,7 @@ export default class App extends Component {
             break;
           }
       }} /> 
+      </div>
       )
     });
   } 
